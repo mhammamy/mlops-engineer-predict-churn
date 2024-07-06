@@ -3,8 +3,7 @@
 
 # import libraries
 import os
-os.environ['QT_QPA_PLATFORM']='offscreen'
-
+os.environ['QT_QPA_PLATFORM'] = 'offscreen'
 
 
 def import_data(pth):
@@ -15,7 +14,7 @@ def import_data(pth):
             pth: a path to the csv
     output:
             df: pandas dataframe
-    '''	
+    '''
     pass
 
 
@@ -60,6 +59,7 @@ def perform_feature_engineering(df, response):
               y_test: y testing data
     '''
 
+
 def classification_report_image(y_train,
                                 y_test,
                                 y_train_preds_lr,
@@ -95,6 +95,7 @@ def feature_importance_plot(model, X_data, output_pth):
              None
     '''
     pass
+
 
 def train_models(X_train, X_test, y_train, y_test):
     '''
